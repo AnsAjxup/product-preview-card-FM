@@ -1,0 +1,27 @@
+body{
+    height: 100vh;
+}
+.card{
+    width: 65rem;
+    height: 45rem;
+    display: flex;
+}
+.img-card{
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 1rem 0 0 1rem;
+}
+.img-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+.description-container{
+    width: 50%;
+    margin: 0;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

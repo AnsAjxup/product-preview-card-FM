@@ -8,12 +8,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Product preview card component</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1280px)">
 </head>
 <body>
   <main class="card">
-    <img class="img-card" src="./images/image-product-mobile.jpg" alt="perfume">
+    <picture class="img-card">
+      <source srcset="./images/image-product-desktop.jpg" media="(min-width: 1280px)">
+      <source srcset="./images/image-product-mobile.jpg" media="(min-width: 375px)">
+      <img src="./images/image-product-mobile.jpg" alt="perfume">
+    </picture>
+    <!-- <img class="img-card" src="./images/image-product-mobile.jpg" alt="perfume"> -->
     <div class="description-container">
       <h2 class="sub-title">PERFUME</h2>
       <h1 class="title">Gabrielle Essence Eau De Parfum</h1>

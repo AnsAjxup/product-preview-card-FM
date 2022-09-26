@@ -15,6 +15,7 @@ html {
 }
 body{
     width: 100%;
+    height: 100vh;
     background-color: var(--Cream-background);
     display: flex;
     justify-content: center;
@@ -31,6 +32,10 @@ body{
 .img-card{
     width: 100%;
     border-radius: 1rem 1rem 0 0;
+}
+.img-card img{
+    width: 100%;
+    border-radius: inherit;
 }
 .description-container{
     width: 86%;
@@ -89,6 +94,9 @@ body{
     margin-right: 1rem;
     position: relative;
     top: 0.2rem;
+}
+.btn-add:hover{
+    background-color: hsl(158, 48%, 17%);
 }
 .attribution {
     font-size: 11px;
